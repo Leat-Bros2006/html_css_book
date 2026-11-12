@@ -48,8 +48,9 @@
                                 Structure (Boilerplate)</span></div><span class="toc-page">ទំព័រ 5</span>
                     </a>
                     <a href="#chapter-03" class="toc-row">
-                        <div class="toc-left"><span class="toc-num">03.</span><span class="toc-title">HTML Text Elements
-                                &amp; Entities</span></div><span class="toc-page">ទំព័រ 6</span>
+                        <div class="toc-left"><span class="toc-num">03.</span><span class="toc-title">HTML Text
+                                Elements, Tag, Element
+                                &amp; Attribute</span></div><span class="toc-page">ទំព័រ 6</span>
                     </a>
                     <a href="#chapter-04" class="toc-row">
                         <div class="toc-left"><span class="toc-num">04.</span><span class="toc-title">Links and
@@ -210,56 +211,35 @@
 
                 <h2 class="ch-title">01. Introduction to Web Development</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">Web Development គឺជាការបង្កើតគេហទំព័រដែលដំណើរការលើ Browser។ ផ្នែកខាងមុខហៅថា
-                    <strong>Frontend</strong> (HTML បង្កើតគ្រោងឆ្អឹង, CSS តុបតែងរចនា) ចំណែកផ្នែកម៉ាស៊ីនមេហៅថា
-                    <strong>Backend</strong>។
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text">Web Development គឺជាការបង្កើត និងអភិវឌ្ឍគេហទំព័រដែលដំណើរការលើ Browser។
+                    ផ្នែកខាងមុខដែលអ្នកប្រើប្រាស់មើលឃើញ និងប្រើប្រាស់ផ្ទាល់ហៅថា
+                    <strong>Frontend</strong> ដែលជាទូទៅត្រូវបានបង្កើតឡើងដោយ ៣ ភាសាគោលគឺ៖ HTML, CSS និង JavaScript
+                    ចំណែកផ្នែកខាងក្រោយដែលអ្នកប្រើប្រាស់មើលមិនឃើញហៅថា
+                    <strong>Backend</strong> ដែលមានតួនាទីគ្រប់គ្រងដំណើរការ Logic, Server និងរក្សាទុកទិន្នន័យ (Database)។
                 </p>
 
                 <p class="step-heading">2. មុខងារសំខាន់ៗ៖</p>
                 <ul class="step-list">
-                    <li><strong>HTML (តួមេគ្រោងឆ្អឹង)៖</strong> បើគ្មាន HTML ទេ Browser គ្មានអ្វីត្រូវគូស ឬបង្ហាញឡើយ។
+                    <li><strong>HTML (HyperText Markup Language)៖</strong> សម្រាប់បង្កើតគ្រោងឆ្អឹង Website (ពាក្យថា
+                        "គ្រោងឆ្អឹង Website" សំដៅទៅលើ៖ មាតិកា និងព័ត៌មានដែលយើងបញ្ចូលដូចជា អត្ថបទ ចំណងជើង រូបភាព
+                        Icon ផ្សេងៗ)។
                     </li>
-                    <li><strong>CSS (តួមេរចនា)៖</strong> បើគ្មាន CSS ទេ គេហទំព័រចេញតែអក្សរសខ្មៅ និងគ្មានទម្រង់រៀបរយ។
+                    <li><strong>CSS (Cascading Style Sheets)៖</strong> សម្រាប់លេង Style ដាក់ពណ៌ ពុម្ពអក្សរ
+                        និងរៀបចំធាតុឱ្យមានភាពស្រស់ស្អាត។ បើគ្មាន CSS ទេ គេហទំព័រចេញតែអក្សរសខ្មៅ
+                        និងគ្មានទម្រង់រៀបរយ។
                     </li>
-                    <li><strong>Element &amp; Attribute៖</strong> Element កំណត់ប្រភេទមាតិកា រីឯ Attribute
-                        ផ្តល់ព័ត៌មានបន្ថែមដូចជា <code class="ic">id</code> ឬ <code class="ic">class</code> សម្រាប់ឱ្យ
-                        CSS ចាប់យកទៅរចនា។</li>
+                    <li><strong>JavaScript (JS)៖</strong> សម្រាប់បង្កើតចលនា ភាពរស់រវើក
+                        និងអន្តរកម្មឆ្លើយតបជាមួយអ្នកប្រើប្រាស់ (ឧ. ពេលចុចប៊ូតុង ផ្ទៀងផ្ទាត់ទិន្នន័យ Form ឬទាញទិន្នន័យពី
+                        Server)។
+                    </li>
                 </ul>
-
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើប្រាស់នៅរាល់ពេលចាប់ផ្តើមសាងសង់គេហទំព័រគ្រប់ប្រភេទ។</p>
-
-                <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
-                <div class="code-box">
-                    <pre>&lt;<span class="t-tag">h1</span> <span class="t-attr">class</span>=<span class="t-str">"title"</span>&gt;សូមស្វាគមន៍មកកាន់ HTML &amp; CSS!&lt;/<span class="t-tag">h1</span>&gt;
-&lt;<span class="t-tag">p</span>&gt;HTML កំណត់គ្រោងឆ្អឹង រីឯ CSS តុបតែងរូបរាង។&lt;/<span class="t-tag">p</span>&gt;</pre>
-                </div>
-
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li><code class="ic">&lt;h1&gt;</code> ជាស្លាកបង្កើតចំណងជើងធំបំផុតនៅលើទំព័រ។</li>
-                    <li><code class="ic">class="title"</code> ដាក់ឈ្មោះសម្គាល់ដើម្បីងាយស្រួលហៅក្នុង CSS។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
-                <div class="browser-window">
-                    <div class="browser-header">
-                        <div class="browser-dots"><span class="browser-dot dot-red"></span><span
-                                class="browser-dot dot-yellow"></span><span class="browser-dot dot-green"></span></div>
-                        <div class="browser-url-bar">https://localhost:5500/index.html</div>
-                    </div>
-                    <div class="browser-canvas">
-                        <h1 style="font-size:1.35rem; color:#0F172A; margin:0 0 4px; font-weight:800;">សូមស្វាគមន៍មកកាន់
-                            HTML &amp; CSS!</h1>
-                        <p style="margin:0; font-size:0.88rem; color:#475569;">HTML កំណត់គ្រោងឆ្អឹង រីឯ CSS
-                            តុបតែងរូបរាង។</p>
-                    </div>
-                </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> HTML ជាគ្រឹះនៃមាតិកា ចំណែក CSS ជាអ្នកកំណត់សោភ័ណភាព
-                    បើខ្វះមួយណាគេហទំព័រក៏មិនអាចពេញលេញបានដែរ។
+                    <strong>3. Summary (សង្ខេបមេរៀន)៖</strong> HTML សម្រាប់បង្កើតគ្រោងឆ្អឹង Website។ CSS សម្រាប់លេង
+                    Style ដាក់ពណ៌ ពុម្ពអក្សរ
+                    និងរៀបចំធាតុឱ្យមានភាពស្រស់ស្អាត។ ចំណែក
+                    JavaScript ជាអ្នកបង្កើតភាពរស់រវើកទៅលើ Website។
                 </div>
             </div>
 
@@ -279,28 +259,28 @@
 
                 <h2 class="ch-title">02. HTML Document Structure (Boilerplate)</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">HTML Boilerplate គឺជាគ្រោងឆ្អឹងកូដគោលដែលឯកសារ HTML ទាំងអស់ត្រូវតែមានជាដាច់ខាត
                     ដើម្បីឱ្យ Browser ស្គាល់ និងដំណើរការត្រឹមត្រូវ។</p>
 
                 <p class="step-heading">2. មុខងារសំខាន់ៗ៖</p>
                 <ul class="step-list">
-                    <li><code class="ic">&lt;!DOCTYPE html&gt;</code> <strong>(មេកំណត់ជំនាន់)៖</strong> ប្រាប់ Browser
-                        ឱ្យដំណើរការតាមស្តង់ដារ HTML5 បើអត់ដាក់អាចខូចប្លង់ចាស់គំរឹល (Quirks Mode)។</li>
+                    <li><code class="ic">&lt;!DOCTYPE html&gt;</code> <strong>(ចាប់យកជំនាន់ចុងក្រោយ)៖</strong> ប្រាប់
+                        Browser
+                        ឱ្យដំណើរការលើ HTML ជំនាន់ចុងក្រោយ។</li>
                     <li><code class="ic">&lt;html&gt;</code> <strong>(មេធំបំផុត - Root)៖</strong>
-                        រុំព័ទ្ធកូដទាំងអស់ក្នុងឯកសារ។</li>
-                    <li><code class="ic">&lt;head&gt;</code> <strong>(មេគ្រប់គ្រងព័ត៌មានកំបាំង)៖</strong> ផ្ទុក <code
+                        រុំព័ទ្ធកូដទាំងអស់របស់ HTML។</li>
+                    <li><code class="ic">&lt;head&gt;</code> <strong>(គ្រប់គ្រងព័ត៌មានកំបាំង)៖</strong> ផ្ទុក <code
                             class="ic">&lt;meta charset="UTF-8"&gt;</code> (ការពារកុំឱ្យខូចអក្សរខ្មែរ) និង <code
                             class="ic">&lt;title&gt;</code>។</li>
-                    <li><code class="ic">&lt;body&gt;</code> <strong>(មេផ្ទុកមាតិកាមើលឃើញ)៖</strong> គ្រប់អក្សរ រូបភាព
-                        និងប៊ូតុងត្រូវតែសរសេរក្នុងនេះ។</li>
+                    <li><code class="ic">&lt;body&gt;</code> <strong>(ផ្ទុកមាតិកាមើលឃើញ)៖</strong> រាល់កូដរបស់ HTML
+                        ត្រូវសរសេរក្នុង body នេះ។</li>
+                    <li><code class="ic">!</code> <strong>(Shortcut)៖</strong> ក្នុង VS Code វាយ <code
+                            class="ic">!</code>
+                        រួចចុច <code class="ic">Tab</code> ដើម្បីបង្កើតគ្រោងឆ្អឹងកូដនេះដោយស្វ័យប្រវត្តិ។</li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើរាល់ពេលបង្កើត File HTML ថ្មី (ក្នុង VS Code វាយ <code class="ic">!</code>
-                    រួចចុច <code class="ic">Tab</code>)។</p>
-
-                <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
+                <p class="step-heading">3. Syntax (ទម្រង់កូដ):</p>
                 <div class="code-box">
                     <pre>&lt;!<span class="t-tag">DOCTYPE</span> <span class="t-attr">html</span>&gt;
 &lt;<span class="t-tag">html</span> <span class="t-attr">lang</span>=<span class="t-str">"km"</span>&gt;
@@ -314,18 +294,18 @@
 &lt;/<span class="t-tag">html</span>&gt;</pre>
                 </div>
 
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
+                <p class="step-heading">4. Explanation (ការពន្យល់កូដ):</p>
                 <ul class="step-list">
                     <li><code class="ic">lang="km"</code> ប្រាប់កម្មវិធីជំនួយ និង Google ថាទំព័រនេះជាភាសាខ្មែរ។</li>
                     <li><code class="ic">&lt;title&gt;</code> កំណត់ឈ្មោះដែលត្រូវបង្ហាញលើ Tab របស់ Browser។</li>
                 </ul>
 
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
+                <p class="step-heading">5. Output (លទ្ធផលនៅលើ Browser):</p>
                 <div class="browser-window">
                     <div class="browser-header">
                         <div class="browser-dots"><span class="browser-dot dot-red"></span><span
                                 class="browser-dot dot-yellow"></span><span class="browser-dot dot-green"></span></div>
-                        <div class="browser-url-bar">🌐 ទំព័រដើម - https://localhost:5500/</div>
+                        <div class="browser-url-bar">https://localhost:5500</div>
                     </div>
                     <div class="browser-canvas">
                         <h1 style="font-size:1.3rem; color:#0F172A; margin:0; font-weight:800;">សួស្តីពិភពលោក!</h1>
@@ -333,9 +313,10 @@
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> Boilerplate ត្រូវផ្តើមដោយ <code
-                        class="ic">&lt;!DOCTYPE html&gt;</code> មាន <code class="ic">&lt;head&gt;</code> ផ្ទុកការកំណត់
-                    និង <code class="ic">&lt;body&gt;</code> ផ្ទុកមាតិកាបង្ហាញលើអេក្រង់។
+                    <strong>6. Summary (សង្ខេបមេរៀន)៖</strong> Boilerplate ត្រូវផ្តើមដោយ <code
+                        class="ic">&lt;!DOCTYPE html&gt;</code> ត្រូវមាន <code class="ic">&lt;html&gt;</code>
+                    ដែលជាមេសម្រាប់ក្តោបធំលើគេទាំងអស់ បន្ទាប់មាន <code class="ic">&lt;head&gt;</code> ផ្ទុកព័ត៌មានកំបាំង
+                    និង <code class="ic">&lt;body&gt;</code> ផ្ទុកមាតិកាបង្ហាញលើ Browser។
                 </div>
             </div>
 
@@ -355,18 +336,39 @@
 
                 <h2 class="ch-title">03. HTML Text Elements, Tag, Element &amp; Attribute</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">HTML Text Elements ប្រើសម្រាប់រៀបចំអត្ថបទលើគេហទំព័រ (ដូចជា <code
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text">HTML Text Elements ប្រើសម្រាប់រៀបចំអត្ថបទលើគេហទំព័រមានដូចជា៖ <code
                         class="ic">&lt;h1&gt;</code> ដល់ <code class="ic">&lt;h6&gt;</code>, <code
-                        class="ic">&lt;p&gt;</code>) ដោយផ្អែកលើគ្រឹះស្នូល ៣ គឺ <strong>Tag</strong>,
+                        class="ic">&lt;p&gt;</code> ដោយផ្អែកលើគ្រឹះស្នូល ៣ គឺ <strong>Tag</strong>,
                     <strong>Element</strong> និង <strong>Attribute</strong>។
                 </p>
 
-                <p class="step-heading">2. Tag, Content, Element &amp; Attribute (ចំណុចគន្លឹះសំខាន់បំផុត):</p>
+                <p class="step-heading">2. ចំណុចសំខាន់ៗ:</p>
                 <ul class="step-list">
-                    <li><strong>Opening Tag &amp; Closing Tag៖</strong> ស្លាកបើកគឺ <code class="ic">&lt;tag&gt;</code>
-                        រីឯស្លាកបិទគឺ <code class="ic">&lt;/tag&gt;</code> (មានសញ្ញាទ្រេត <code class="ic">/</code>)។
-                        ពេល Opening Tag និង Closing Tag បូកបញ្ចូលគ្នា គេហៅថា <strong>Tag</strong>។</li>
+                    <li><code class="ic">&lt;h1&gt;</code> ដល់ <code class="ic">&lt;h6&gt;</code>៖
+                        សម្រាប់ក្តោបចំណងជើងអត្ថបទ។</li>
+
+                    <li><code class="ic">&lt;p&gt;</code>៖ សម្រាប់ក្តោបអត្ថបទ។</li>
+
+                    <li><strong>Text Tags សំខាន់ៗ៖</strong> <code class="ic">&lt;strong&gt;</code> ឬ <code
+                            class="ic">&lt;b&gt;</code>
+                        (អក្សរដិត), <code class="ic">&lt;em&gt;</code> ឬ <code class="ic">&lt;i&gt;</code> (អក្សរទ្រេត),
+                        <code class="ic">&lt;u&gt;</code> (គូសបន្ទាត់ពីក្រោម), <code class="ic">&lt;hr&gt;</code>
+                        (បន្ទាត់ផ្តេកខណ្ឌចែក),
+                        <code class="ic">&lt;sub&gt;</code> (សន្ទស្សន៍ក្រោម), <code class="ic">&lt;sup&gt;</code>
+                        (ស្វ័យគុណលើ) និង
+                        <code class="ic">&amp;copy;</code> (&copy;)។
+                    </li>
+
+                    <li><strong>Opening Tag៖</strong> សំដៅផ្នែកបើក (ស្លាកបើក)។ ឧ. <code class="ic">&lt;p&gt;</code>
+                    </li>
+
+                    <li><strong>Closing Tag៖</strong> សំដៅផ្នែកបិទ (ស្លាកបិទ)។ ឧ. <code class="ic">&lt;/p&gt;</code>
+                        (មានសញ្ញាទ្រេត <code class="ic">/</code>)។</li>
+
+                    <li><strong>Opening Tag + Closing Tag៖</strong> ពេល Opening Tag និង Closing Tag បូកបញ្ចូលគ្នា
+                        គេហៅថា <strong>Tag</strong>។</li>
+
                     <li><strong>Content៖</strong> គឺជាអត្ថបទ ឬមាតិកាដែលស្ថិតនៅចន្លោះកណ្តាលរវាង Opening Tag និង Closing
                         Tag។</li>
                     <li><strong>HTML Element៖</strong> គឺកើតចេញពី <em>Opening Tag + Content + Closing Tag</em>
@@ -375,17 +377,9 @@
                         ហើយវាត្រូវស្ថិតនៅក្នុង <strong>Opening Tag</strong> ជានិច្ច ក្នុងទម្រង់ <code
                             class="ic">name="value"</code> (ដូចជា <code class="ic">id</code>, <code
                             class="ic">class</code>, <code class="ic">title</code>)។</li>
-                    <li><strong>Text Tags សំខាន់ៗ៖</strong> <code class="ic">&lt;strong&gt;</code> (អក្សរដិតសង្កត់ន័យ),
-                        <code class="ic">&lt;em&gt;</code> (អក្សរទ្រេត), <code class="ic">&lt;sub&gt;</code>
-                        (សន្ទស្សន៍ក្រោម), <code class="ic">&lt;sup&gt;</code> (ស្វ័យគុណលើ) និង <code
-                            class="ic">&amp;copy;</code> (&copy;)។
-                    </li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើរាល់ពេលសរសេរខ្លឹមសារអត្ថបទ ចំណងជើង កថាខណ្ឌ និងរូបមន្តគណិតវិទ្យា/គីមីវិទ្យា។</p>
-
-                <p class="step-heading">4. Syntax (ទម្រង់កូដ Tag, Element &amp; Attribute):</p>
+                <p class="step-heading">3. Syntax (ទម្រង់កូដ Tag, Element &amp; Attribute):</p>
                 <div class="code-box">
                     <pre><span class="t-com">&lt;!-- Opening Tag (មាន Attribute) + Content + Closing Tag = Element ទាំងមូល --&gt;</span>
 &lt;<span class="t-tag">h2</span> <span class="t-attr">class</span>=<span class="t-str">"heading"</span>&gt;រូបមន្តវិទ្យាសាស្ត្រ&lt;/<span class="t-tag">h2</span>&gt;
@@ -396,7 +390,7 @@
 &lt;<span class="t-tag">p</span>&gt;&amp;copy; 2026 រក្សាសិទ្ធិគ្រប់យ៉ាង&lt;/<span class="t-tag">p</span>&gt;</pre>
                 </div>
 
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
+                <p class="step-heading">4. Explanation (ការពន្យល់កូដ):</p>
                 <ul class="step-list">
                     <li><code class="ic">&lt;h2 class="heading"&gt;</code> ជា Opening Tag ដែលផ្ទុក Attribute <code
                             class="ic">class="heading"</code>។</li>
@@ -404,12 +398,12 @@
                         ទាំងអស់នេះផ្គុំគ្នាបានជា <strong>Heading Element</strong> ពេញលេញមួយ។</li>
                 </ul>
 
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
+                <p class="step-heading">5. Output (លទ្ធផលនៅលើ Browser):</p>
                 <div class="browser-window">
                     <div class="browser-header">
                         <div class="browser-dots"><span class="browser-dot dot-red"></span><span
                                 class="browser-dot dot-yellow"></span><span class="browser-dot dot-green"></span></div>
-                        <div class="browser-url-bar">https://localhost:5500/text.html</div>
+                        <div class="browser-url-bar">https://localhost:5500</div>
                     </div>
                     <div class="browser-canvas">
                         <h2 style="font-size:1.15rem; color:#0F172A; margin:0 0 3px; font-weight:700;">
@@ -425,10 +419,10 @@
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> Opening Tag + Closing Tag = <strong>Tag</strong>។
+                    <strong>6. Summary (សង្ខេបមេរៀន)៖</strong> Opening Tag + Closing Tag = <strong>Tag</strong>។
                     ខាងក្នុង Tag ជា <strong>Content</strong> ហើយបូកបញ្ចូលគ្នាទាំងអស់បង្កើតបានជា
                     <strong>Element</strong>។ រីឯ <strong>Attribute</strong> ស្ថិតក្នុង Opening Tag
-                    សម្រាប់ផ្តល់ព័ត៌មានបន្ថែម។
+                    សម្រាប់ផ្តល់ព័ត៌មានបន្ថែមទៅឱ្យ <strong>Tag</strong>។
                 </div>
             </div>
 
@@ -448,13 +442,14 @@
 
                 <h2 class="ch-title">04. Links and Navigation</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">ស្លាក <code class="ic">&lt;a&gt;</code> (Anchor Element) ប្រើសម្រាប់បង្កើតតំណភ្ជាប់
-                    (Hyperlink) ដើម្បីផ្លាស់ទីរវាងទំព័រ ភ្ជាប់ទៅគេហទំព័រក្រៅ ឬផ្ញើអ៊ីមែល និងទូរស័ព្ទ។</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text">Tag <code class="ic">&lt;a&gt;</code> ប្រើសម្រាប់បង្កើតតំណភ្ជាប់ទៅកាន់គេហទំព័រផ្សេង
+                    ឬបញ្ជាឱ្យទូរស័ព្ទបើកផ្ទាំងហៅចេញភ្លាមៗ។</p>
 
                 <p class="step-heading">2. មុខងារសំខាន់ៗ៖</p>
                 <ul class="step-list">
-                    <li><code class="ic">href</code> <strong>(មេគោលដៅ - ខ្វះមិនបាន)៖</strong> បើគ្មាន <code
+                    <li><code class="ic">href</code> <strong>(Hypertext Reference)៖</strong> ជា Attribute
+                        កំណត់អាសយដ្ឋាន URL ឬទីតាំងគោលដៅដែលត្រូវនាំអ្នកប្រើប្រាស់ទៅកាន់នៅពេលចុចលើ Link។ បើគ្មាន <code
                             class="ic">href</code> ទេ ស្លាក <code class="ic">&lt;a&gt;</code> នឹងក្លាយជាអក្សរធម្មតា
                         ចុចមិនទៅណាឡើយ។</li>
                     <li><code class="ic">target="_blank"</code> <strong>(បើក Tab ថ្មី)៖</strong>
@@ -488,7 +483,7 @@
                     <div class="browser-header">
                         <div class="browser-dots"><span class="browser-dot dot-red"></span><span
                                 class="browser-dot dot-yellow"></span><span class="browser-dot dot-green"></span></div>
-                        <div class="browser-url-bar">https://localhost:5500/nav.html</div>
+                        <div class="browser-url-bar">https://localhost:5500</div>
                     </div>
                     <div class="browser-canvas">
                         <a href="#chapter-04" style="color:#0284C7; text-decoration:none; font-weight:600;">ទំព័រដើម</a>
@@ -521,45 +516,46 @@
                     <span>05. HTML Images</span>
                 </header>
 
-                <h2 class="ch-title">05. HTML Images (Absolute &amp; Relative Path)</h2>
+                <h2 class="ch-title">05. HTML Images (Absolute &amp; Reference Link)</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">ស្លាក <code class="ic">&lt;img&gt;</code> គឺជា Empty/Void Element (គ្មាន Tag
-                    បិទឡើយ) ប្រើសម្រាប់បង្កប់ និងបង្ហាញរូបភាពនៅលើទំព័រគេហទំព័រ។</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text">Tag <code class="ic">&lt;img&gt;</code> គឺជា Self-closing Tag (គ្មាន Tag បិទ)
+                    ប្រើសម្រាប់ដាក់រូបភាព។</p>
 
-                <p class="step-heading">2. Two Ways to Insert Images (វិធីដាក់រូបភាពទាំង ២ របៀប):</p>
+                <p class="step-heading">2. វិធីដាក់រូបភាពមាន ២ របៀប:</p>
                 <ul class="step-list">
-                    <li><strong>១. Relative Path (ផ្លូវយោងក្នុងគម្រោងផ្ទាល់)៖</strong> យោងតាមទីតាំង Folder ក្នុងម៉ាស៊ីន
-                        ឬ Hosting របស់យើង (ឧ. <code class="ic">images/photo.jpg</code> ឬ <code
-                            class="ic">../assets/logo.png</code>)។ វិធីនេះពេញនិយមបំផុតសម្រាប់រូបភាពក្នុងវេបសាយផ្ទាល់
-                        ព្រោះទោះបីប្តូរ Domain ក៏រូបភាពមិនងាយដាច់ដែរ។</li>
-                    <li><strong>២. Absolute Path/Link (ផ្លូវពេញលេញពីអ៊ីនធឺណិត)៖</strong> ប្រើប្រាស់ URL
-                        ពេញលេញដែលផ្តើមដោយ <code class="ic">https://...</code> ស្រង់ចេញពីគេហទំព័រខាងក្រៅ។
-                        គុណវិបត្តិគឺបើសាមីគេហទំព័រដើមលុបរូបភាពចោល នោះរូបភាពលើវេបសាយយើងក៏នឹងដាច់តាមដែរ។</li>
-                    <li><code class="ic">src</code> <strong>(មេប្រភព - ខ្វះមិនបាន)៖</strong> ប្រាប់ពីទីតាំងរូបភាព
-                        បើគ្មានវាទេ Browser គ្មានអ្វីបង្ហាញឡើយ។</li>
-                    <li><code class="ic">alt</code> <strong>(មេអត្ថបទជំនួស)៖</strong>
-                        បង្ហាញអត្ថបទជំនួសពេលរូបភាពផ្ទុកមិនចេញ និងជួយឱ្យស្គាល់រូបភាព។</li>
+                    <li><strong>១. Absolute Link ៖</strong> បញ្ចូលរូបភាពតាមរយៈ Link Address មកពី Browser (ឧ. <code
+                            class="ic">https://...</code>)។</li>
+                    <li><strong>២. Reference Link ៖</strong> បញ្ចូលរូបភាពដែលមានក្នុង Folder របស់យើងស្រាប់ (ឧ. <code
+                            class="ic">images/photo.jpg</code> ឬ <code class="ic">../assets/logo.png</code>)។</li>
+                    <li><code class="ic">src</code> <strong>៖</strong> សម្រាប់ដាក់ទីតាំងរូបភាព។</li>
+                    <li><code class="ic">alt</code> <strong>៖</strong> បង្ហាញអត្ថបទជំនួសពេលរូបភាពផ្ទុកមិនចេញ
+                        និងជួយឱ្យស្គាល់រូបភាព។</li>
                 </ul>
 
                 <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើប្រាស់ Relative Path សម្រាប់រូបភាព Logo ឬ Banner ក្នុងម៉ាស៊ីន និងប្រើ Absolute
+                <p class="step-text">ប្រើប្រាស់ Reference Link សម្រាប់រូបភាព Logo ឬ Banner ក្នុងម៉ាស៊ីន និងប្រើ Absolute
                     Link ពេលទាញរូបភាពពី Server ក្រៅ (Cloud/CDN)។</p>
 
                 <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
                 <div class="code-box">
-                    <pre><span class="t-com">&lt;!-- ១. របៀប Relative Path (យោងក្នុង Folder គម្រោង) --&gt;</span>
-&lt;<span class="t-tag">img</span> <span class="t-attr">src</span>=<span class="t-str">"assets/images/profile.jpg"</span> <span class="t-attr">alt</span>=<span class="t-str">"រូបលោកគ្រូ លាត ប្រុស"</span> <span class="t-attr">width</span>=<span class="t-str">"300"</span>&gt;
+                    <pre><span class="t-com">&lt;!-- ១. របៀប Absolute Link (តាមរយៈ Link Address ពី Browser) --&gt;</span>
+&lt;<span class="t-tag">img</span> <span class="t-attr">src</span>=<span class="t-str">"https://example.com/logo.png"</span> <span class="t-attr">alt</span>=<span class="t-str">"Logo សាលា"</span> <span class="t-attr">width</span>=<span class="t-str">"300"</span>&gt;
 
-<span class="t-com">&lt;!-- ២. របៀប Absolute Link (តំណពេញលេញពីអ៊ីនធឺណិត) --&gt;</span>
-&lt;<span class="t-tag">img</span> <span class="t-attr">src</span>=<span class="t-str">"https://example.com/logo.png"</span> <span class="t-attr">alt</span>=<span class="t-str">"Logo សាលា"</span> <span class="t-attr">width</span>=<span class="t-str">"300"</span>&gt;</pre>
+<span class="t-com">&lt;!-- ២. របៀប Reference Link (រូបភាពក្នុង Folder របស់យើងស្រាប់) --&gt;</span>
+&lt;<span class="t-tag">img</span> <span class="t-attr">src</span>=<span class="t-str">"assets/images/profile.jpg"</span> <span class="t-attr">alt</span>=<span class="t-str">"រូបលោកគ្រូ លាត ប្រុស"</span> <span class="t-attr">width</span>=<span class="t-str">"300"</span>&gt;</pre>
                 </div>
 
                 <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
                 <ul class="step-list">
-                    <li><code class="ic">assets/images/profile.jpg</code> រកមើលរូបភាពចេញពី Folder ក្នុងម៉ាស៊ីនផ្ទាល់។
-                    </li>
-                    <li><code class="ic">https://...</code> រត់ទៅទាញរូបភាពពី Server លើអ៊ីនធឺណិតមកបង្ហាញ។</li>
+                    <li><code class="ic">https://...</code> (Absolute Link) រត់ទៅទាញរូបភាពពី Browser ឬ Server
+                        លើអ៊ីនធឺណិតមកបង្ហាញ។</li>
+                    <li><code class="ic">assets/images/profile.jpg</code> (Reference Link) រកមើលរូបភាពចេញពី Folder
+                        ក្នុងម៉ាស៊ីនរបស់យើងផ្ទាល់។</li>
+                    <li><code class="ic">width</code> សម្រាប់កំណត់ទំហំទទឹងរូបភាព និង <code class="ic">height</code>
+                        សម្រាប់កំណត់
+                        កម្ពស់របស់រូបភាព ដែលគិតជា Pixel (ជាទូទៅគេនិយមកំណត់តែ <code class="ic">width</code>
+                        ដើម្បីរក្សាសមាមាត្រដើម និងកុំឱ្យរូបភាពទាញខូចទ្រង់ទ្រាយ)។</li>
                 </ul>
 
                 <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
@@ -567,13 +563,13 @@
                     <div class="browser-header">
                         <div class="browser-dots"><span class="browser-dot dot-red"></span><span
                                 class="browser-dot dot-yellow"></span><span class="browser-dot dot-green"></span></div>
-                        <div class="browser-url-bar">https://localhost:5500/images.html</div>
+                        <div class="browser-url-bar">https://localhost:5500</div>
                     </div>
                     <div class="browser-canvas">
                         <div style="display:flex; gap:12px; font-size:0.82rem;">
                             <div
                                 style="flex:1; background:#E0F2FE; border:1px dashed #0284C7; padding:14px; text-align:center; border-radius:6px; color:#0369A1; font-weight:700;">
-                                📁 [Relative Image]<br><span
+                                📁 [Reference Image]<br><span
                                     style="font-weight:400; font-size:0.75rem;">assets/images/profile.jpg</span>
                             </div>
                             <div
@@ -586,9 +582,9 @@
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> រូបភាពដាក់បាន ២ របៀបគឺ <strong>Relative</strong>
-                    (ផ្លូវក្នុងម៉ាស៊ីន) និង <strong>Absolute</strong> (Link ពេញលេញ) ដោយត្រូវតែមាន <code
-                        class="ic">src</code> ជាប្រភព និង <code class="ic">alt</code> ជាអត្ថបទជំនួសជាដាច់ខាត។
+                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> រូបភាពដាក់បាន ២ របៀបគឺ <strong>Reference Link</strong>
+                    (ផ្លូវក្នុងម៉ាស៊ីន) និង <strong>Absolute Link</strong> (Link ពី Browser) ចំណែក <code
+                        class="ic">src</code> ជាកន្លែងសម្រាប់ដាក់ប្រភពរូបភាព។
                 </div>
             </div>
 
@@ -608,7 +604,7 @@
 
                 <h2 class="ch-title">06. HTML Lists (Ordered &amp; Unordered)</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">HTML Lists ប្រើសម្រាប់រៀបចំទិន្នន័យជាបញ្ជី ដែលមាន ២
                     ប្រភេទចម្បងដែលគេនិយមប្រើបំផុតគឺ៖ បញ្ជីមានលេខរៀង (<code class="ic">&lt;ol&gt;</code>)
                     និងបញ្ជីមានចំណុច (<code class="ic">&lt;ul&gt;</code>)។</p>
@@ -690,7 +686,7 @@
 
                 <h2 class="ch-title">07. HTML Tables</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">HTML Table ប្រើសម្រាប់រៀបចំទិន្នន័យជាក្រឡាតារាងមានជួរឈរ
                     និងជួរដេកត្រឹមត្រូវតាមលំដាប់លំដោយ។</p>
 
@@ -778,7 +774,7 @@
 
                 <h2 class="ch-title">08. HTML Forms</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">HTML Form គឺជាប្រព័ន្ធប្រមូល និងបញ្ជូនទិន្នន័យពីអ្នកប្រើប្រាស់នៅលើ Browser
                     ទៅកាន់ម៉ាស៊ីន Server។</p>
 
@@ -856,7 +852,7 @@
 
                 <h2 class="ch-title">09. Semantic HTML5 Elements</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">Semantic HTML5
                     គឺជាការប្រើប្រាស់ស្លាកកូដដែលមានអត្ថន័យច្បាស់លាស់បញ្ជាក់ពីតួនាទីមាតិកា ជំនួសឱ្យការប្រើ <code
                         class="ic">&lt;div&gt;</code> គ្រប់កន្លែង។</p>
@@ -943,7 +939,7 @@
 
                 <h2 class="ch-title">10. HTML Advanced Features &amp; SEO</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">មុខងារឆ្លាតវៃកម្រិតខ្ពស់របស់ HTML ជួយបង្កើត Widget និងរក្សាទុកទិន្នន័យបន្ថែមលើ DOM
                     ដោយមិនបាច់ពឹងផ្អែកលើ JavaScript។</p>
 
@@ -1021,7 +1017,7 @@
 
                 <h2 class="ch-title">11. Introduction to CSS3</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">CSS3 (Cascading Style Sheets) គឺជាភាសាសម្រាប់តុបតែងពណ៌ ពុម្ពអក្សរ គម្លាត
                     និងរៀបចំប្លង់ឱ្យធាតុ HTML មានភាពទាក់ទាញ។</p>
 
@@ -1094,7 +1090,7 @@
 
                 <h2 class="ch-title">12. CSS Selectors &amp; Pseudo-Classes</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">CSS Selectors គឺជាគន្លឹះសម្រាប់ចង្អុលបង្ហាញ និងចាប់យកធាតុ HTML
                     មកដាក់ស្ទីលតុបតែងតាមបំណង។</p>
 
@@ -1168,7 +1164,7 @@
 
                 <h2 class="ch-title">13. CSS Colors, Backgrounds &amp; Gradients</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">CSS Colors និង Backgrounds ប្រើសម្រាប់កំណត់ពណ៌អត្ថបទ ពណ៌ផ្ទៃ រូបភាពផ្ទៃខាងក្រោយ
                     និងការច្របល់ពណ៌ Gradients លើ Element។</p>
 
@@ -1238,7 +1234,7 @@
 
                 <h2 class="ch-title">14. CSS Typography &amp; Google Fonts</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">CSS Typography គ្រប់គ្រងទៅលើទម្រង់ពុម្ពអក្សរ ទំហំ កម្រាស់
                     និងគម្លាតបន្ទាត់ដើម្បីឱ្យអត្ថបទស្រួលអានបំផុត។</p>
 
@@ -1312,7 +1308,7 @@
 
                 <h2 class="ch-title">15. CSS Box Model</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">CSS Box Model គឺជាគំរូប្រអប់ចតុកោណដែលគ្រប់គ្រងលើទំហំ និងគម្លាតនៃគ្រប់ធាតុ HTML
                     ទាំងអស់លើគេហទំព័រ។</p>
 
@@ -1388,7 +1384,7 @@
 
                 <h2 class="ch-title">16. CSS Display and Position</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text"><code class="ic">display</code> កំណត់របៀបដែលធាតុបង្ហាញខ្លួន រីឯ <code
                         class="ic">position</code> កំណត់កូអរដោនេទីតាំងនៃធាតុលើអេក្រង់។</p>
 
@@ -1467,7 +1463,7 @@
 
                 <h2 class="ch-title">17. CSS Flexbox Layout</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">CSS Flexbox គឺជាប្រព័ន្ធរៀបចំប្លង់ ១ វិមាត្រ (1D Layout) សម្រាប់រៀបចំ តម្រឹម
                     និងចែកចាយគម្លាតធាតុកូនតាមជួរដេក ឬជួរឈរយ៉ាងបត់បែន។</p>
 
@@ -1543,7 +1539,7 @@
 
                 <h2 class="ch-title">18. CSS Grid Layout</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">CSS Grid គឺជាប្រព័ន្ធរៀបចំប្លង់ ២ វិមាត្រ (2D Layout)
                     ដែលអនុញ្ញាតឱ្យគ្រប់គ្រងទាំងជួរឈរ (Columns) និងជួរដេក (Rows) ក្នុងពេលតែមួយ។</p>
 
@@ -1623,7 +1619,7 @@
 
                 <h2 class="ch-title">19. Responsive Web Design &amp; Media Queries</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">Responsive Web Design គឺជាវិធីសាស្ត្ររៀបចំគេហទំព័រឱ្យបត់បែនទំហំ
                     និងប្លង់ដោយស្វ័យប្រវត្តិតាមរយៈ <code class="ic">@media</code> queries
                     ដើម្បីឱ្យមើលឃើញស្អាតលើគ្រប់ឧបករណ៍ (ទូរស័ព្ទ, Tablet, និងកុំព្យូទ័រ)។</p>
@@ -1709,7 +1705,7 @@
 
                 <h2 class="ch-title">20. CSS Units &amp; Math Functions</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">CSS Units កំណត់ខ្នាតរង្វាស់ទំហំ រួមមានខ្នាតថេរ (<code class="ic">px</code>),
                     ខ្នាតធៀប (<code class="ic">rem</code>, <code class="ic">vw</code>, <code class="ic">vh</code>)
                     និងអនុគមន៍គណនាទំនើប។</p>
@@ -1785,7 +1781,7 @@
 
                 <h2 class="ch-title">21. CSS Transitions and Transforms</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text"><code class="ic">transition</code> បង្កើតចលនាផ្លាស់ប្តូរទន់ភ្លន់ រីឯ <code
                         class="ic">transform</code> ប្រើសម្រាប់រំកិល ពង្រីក ឬបង្វិលរូបរាង Element។</p>
 
@@ -1856,7 +1852,7 @@
 
                 <h2 class="ch-title">22. CSS Animations (@keyframes)</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">CSS Animations គឺជាការបង្កើតចលនាស្វ័យប្រវត្តិច្រើនដំណាក់កាលដោយមិនបាច់រង់ចាំការដាក់
                     Mouse ពីលើឡើយ។</p>
 
@@ -1934,7 +1930,7 @@
 
                 <h2 class="ch-title">23. Advanced CSS (Variables, :is, :has)</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">មុខងារ CSS កម្រិតខ្ពស់រួមមាន CSS Variables (Custom Properties) និង Selectors
                     ជំនាន់ថ្មីជួយឱ្យកូដខ្លី និងឆ្លាតវៃ។</p>
 
@@ -2007,7 +2003,7 @@
 
                 <h2 class="ch-title">24. CSS Architecture &amp; BEM Methodology</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
                 <p class="step-text">BEM (Block__Element--Modifier) គឺជាស្តង់ដារអន្តរជាតិនៃការដាក់ឈ្មោះ Class ក្នុង CSS
                     ដើម្បីកុំឱ្យជាន់ឈ្មោះគ្នា និងងាយស្រួលធ្វើការងារជាក្រុម។</p>
 
