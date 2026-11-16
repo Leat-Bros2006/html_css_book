@@ -1,9 +1,9 @@
 /* ==========================================================================
    FILE: css/style.css
-   BOOK: HTML & CSS (Browser Mockup Output Edition)
+   BOOK: HTML5 & CSS3 (Modern Sky Blue Edition)
    AUTHOR: រៀបចំដោយ៖ លាត ប្រុស
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Kantumruy+Pro:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Kantumruy+Pro:wght@400;500;600;700;800&display=swap');
 
 :root {
   --primary: #0284C7;
@@ -16,7 +16,6 @@
   --muted: #64748B;
   --border: #E2E8F0;
   --code-bg: #0F172A;
-  --summary-bg: #F8FAFC;
   --font-sans: 'Inter', 'Kantumruy Pro', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
@@ -62,6 +61,7 @@ body {
   min-height: 265mm;
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
 }
 
 .page-body {
@@ -70,78 +70,459 @@ body {
 }
 
 /* ==========================================================================
-   COVER PAGE & THANK YOU PAGE (100% MIDDLE & CENTER)
+   MODERN EDITORIAL TECH COVER (UNIQUE FOR HTML5 & CSS3)
    ========================================================================== */
 .cover-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  background-color: #080E1A;
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(2, 132, 199, 0.28) 0%, transparent 45%),
+    radial-gradient(circle at 88% 82%, rgba(56, 189, 248, 0.22) 0%, transparent 50%),
+    radial-gradient(rgba(148, 163, 184, 0.14) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 22px 22px;
+  color: #FFFFFF;
+  justify-content: space-between;
+  padding: 2.6rem 2.85rem;
+  text-align: left;
+  border: none;
 }
 
+.cover-accent-strip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #0284C7, #38BDF8, #818CF8);
+}
+
+.cover-glow-orb {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.22) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cover-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.cover-brand-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #BAE6FD;
+  letter-spacing: 1px;
+}
+
+.dot-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #38BDF8;
+  box-shadow: 0 0 8px #38BDF8;
+}
+
+.cover-tech-badges {
+  display: flex;
+  gap: 6px;
+}
+
+.tech-tag {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #7DD3FC;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+.cover-main-section {
+  margin: auto 0;
+  z-index: 1;
+}
+
+.cover-overline {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #38BDF8;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.cover-big-title {
+  font-size: 2.95rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.cover-big-title .title-highlight {
+  display: inline-block;
+  font-size: 2.25rem;
+  background: linear-gradient(135deg, #38BDF8 0%, #BAE6FD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cover-desc {
+  font-size: 0.98rem;
+  color: #CBD5E1;
+  line-height: 1.7;
+  max-width: 580px;
+  margin-bottom: 26px;
+}
+
+/* Browser UI Architecture Mockup on Cover */
+.cover-ui-showcase {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(56, 189, 248, 0.32);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+}
+
+.ui-showcase-bar {
+  background: rgba(30, 41, 59, 0.9);
+  padding: 9px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.ui-showcase-title {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: #94A3B8;
+}
+
+.ui-showcase-badge {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34D399;
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.ui-showcase-body {
+  display: grid;
+  grid-template-columns: 135px 1fr;
+  gap: 14px;
+  padding: 16px;
+}
+
+.ui-mock-sidebar {
+  background: rgba(30, 41, 59, 0.6);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.mock-line {
+  height: 7px;
+  border-radius: 99px;
+  background: rgba(148, 163, 184, 0.25);
+}
+
+.mock-line.active {
+  background: #38BDF8;
+}
+
+.w-60 { width: 60%; }
+.w-70 { width: 70%; }
+.w-80 { width: 80%; }
+.w-90 { width: 90%; }
+
+.ui-mock-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mock-hero-banner {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.35), rgba(56, 189, 248, 0.15));
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.mock-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: #7DD3FC;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.mock-hero-banner h4 {
+  font-size: 0.92rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.mock-cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.mock-mini-card {
+  background: rgba(30, 41, 59, 0.65);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.mock-icon {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #38BDF8;
+  display: block;
+}
+
+.mock-mini-card strong {
+  display: block;
+  font-size: 0.82rem;
+  color: #FFFFFF;
+}
+
+.mock-mini-card small {
+  font-size: 0.7rem;
+  color: #94A3B8;
+}
+
+/* Cover Footer */
+.cover-footer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+  padding-top: 16px;
+  z-index: 1;
+}
+
+.cover-author-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0284C7, #38BDF8);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-label {
+  display: block;
+  font-size: 0.74rem;
+  color: #94A3B8;
+}
+
+.author-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.cover-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(2, 132, 199, 0.25);
+  border: 1.5px solid #38BDF8;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.55rem 1.25rem;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.cover-action-btn:hover {
+  background: #0284C7;
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.35);
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   THANK YOU PAGE (CENTERED & MODERN DARK THEME)
+   ========================================================================== */
 .thankyou-page {
+  background-color: #080E1A;
+  background-image:
+    radial-gradient(circle at 50% 35%, rgba(2, 132, 199, 0.25) 0%, transparent 55%),
+    radial-gradient(rgba(148, 163, 184, 0.14) 1px, transparent 1px);
+  background-size: 100% 100%, 22px 22px;
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   text-align: center;
+  padding: 2.6rem 2.85rem;
+  border: none;
 }
 
-.cover-center-box {
-  max-width: 640px;
+/* ធ្វើឱ្យប្រអប់កណ្តាលរត់មកចំកណ្តាលទំព័រ (Middle) ពិតប្រាកដ */
+.thankyou-page .cover-center-box {
+  max-width: 580px;
   width: 100%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cover-badge-pill {
+.thankyou-page .cover-badge-pill {
   display: inline-block;
-  background: #E0F2FE;
-  color: var(--primary);
-  padding: 0.45rem 1.35rem;
+  background: rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  color: #38BDF8;
+  padding: 0.35rem 1.35rem;
   border-radius: 999px;
   font-size: 0.85rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-
-.cover-main-title {
-  font-size: 2.75rem;
-  font-weight: 800;
-  color: var(--secondary);
-  line-height: 1.3;
   margin-bottom: 1rem;
 }
 
-.cover-subtitle {
-  font-size: 1.05rem;
-  color: var(--muted);
-  margin-bottom: 1.75rem;
+.thankyou-page .cover-main-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 0.85rem;
+  background: linear-gradient(135deg, #FFFFFF 35%, #7DD3FC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.cover-line {
-  width: 56px;
+.thankyou-page .cover-line {
+  width: 60px;
   height: 4px;
-  background: var(--primary);
-  margin: 0 auto 1.75rem;
+  background: linear-gradient(90deg, #0284C7, #38BDF8);
   border-radius: 99px;
+  margin: 0 auto 1.25rem;
 }
 
-.cover-meta {
+.thankyou-page .step-text {
+  color: #CBD5E1 !important;
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+/* ប្រអប់ណែនាំភាសាបន្ទាប់ (Dark Glass Card) */
+.thankyou-next-box {
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-left: 4px solid #38BDF8;
+  border-radius: 12px;
+  padding: 1.15rem 1.45rem;
+  margin: 1.25rem auto 1.5rem;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.thankyou-next-box .next-title {
+  color: #38BDF8;
+  font-weight: 700;
+  font-size: 0.92rem;
+  margin-bottom: 0.55rem;
+  display: block;
+}
+
+.thankyou-next-box p {
+  color: #E2E8F0;
+  margin-bottom: 0.3rem;
+}
+
+.thankyou-next-box p:last-child {
+  margin-bottom: 0;
+}
+
+.thankyou-next-box strong {
+  color: #FFFFFF;
+}
+
+/* ព័ត៌មានអ្នកនិពន្ធ និង Link Telegram */
+.thankyou-page .cover-meta {
   font-size: 0.95rem;
-  color: var(--text);
-  line-height: 1.9;
+  color: #CBD5E1;
+  line-height: 1.85;
 }
 
-.cover-meta strong {
-  color: var(--secondary);
+.thankyou-page .cover-meta strong {
+  color: #FFFFFF;
   font-weight: 700;
 }
 
-.cover-meta a {
-  color: #6D28D9;
+.thankyou-page .cover-meta a {
+  color: #38BDF8;
+  font-weight: 700;
   text-decoration: underline;
-  font-weight: 500;
+}
+
+/* Footer ខាងក្រោមទំព័រ Thank You */
+.thankyou-page .page-foot {
+  width: 100%;
+  margin-top: 0;
+  border-top-color: rgba(255, 255, 255, 0.15);
+}
+
+.thankyou-page .page-foot .author-credit {
+  color: #38BDF8;
+}
+
+.thankyou-page .page-num {
+  color: #94A3B8;
+}
+
+.thankyou-page .cover-meta a.thankyou-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(2, 132, 199, 0.25);
+  border: 1.5px solid #38BDF8;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.6rem 1.5rem;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.thankyou-page .cover-meta a.thankyou-btn:hover {
+  background: #0284C7;
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.35);
+  transform: translateY(-1px);
 }
 
 /* ==========================================================================
@@ -163,10 +544,6 @@ body {
 .page-top-header a {
   color: var(--primary);
   text-decoration: none;
-}
-
-.page-top-header a:hover {
-  text-decoration: underline;
 }
 
 .page-foot {
@@ -255,12 +632,16 @@ body {
 }
 
 /* ==========================================================================
-   TYPOGRAPHY & CODE
+   TYPOGRAPHY, HIGHLIGHTED TITLE & CODE
    ========================================================================== */
 .ch-title {
-  font-size: 1.45rem;
+  font-size: 1.32rem;
   font-weight: 800;
   color: var(--secondary);
+  background: linear-gradient(to right, #BAE6FD 0%, #E0F2FE 65%, rgba(224, 242, 254, 0.25) 100%);
+  padding: 0.45rem 0.95rem;
+  border-left: 5px solid var(--primary-dark);
+  border-radius: 0 6px 6px 0;
   margin-bottom: 0.8rem;
 }
 
@@ -373,19 +754,25 @@ code.ic {
   background: #FFFFFF;
 }
 
-/* Summary Box */
+/* ==========================================================================
+   SUMMARY BOX (REACT STYLE)
+   ========================================================================== */
 .summary-box {
-  background: var(--summary-bg);
+  background: #F0F9FF;
+  border: 1px solid #BAE6FD;
   border-left: 4px solid var(--primary);
-  border-radius: 0 6px 6px 0;
+  border-radius: 6px;
   padding: 0.55rem 0.95rem;
-  margin-top: 0.45rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.25rem;
   font-size: 0.86rem;
+  color: var(--secondary);
+  line-height: 1.72;
 }
 
 .summary-box strong {
-  color: var(--primary-dark);
+  color: var(--secondary);
+  font-weight: 700;
 }
 
 .t-tag { color: #F472B6; }
@@ -399,7 +786,6 @@ code.ic {
    FILE: css/responsive.css
    TABLET/MOBILE RESPONSIVE + EXACT A4 PRINT ENGINE
    ========================================================================== */
-
 @media screen and (max-width: 991px) {
   .page {
     padding: 2rem 1.75rem;
@@ -407,10 +793,14 @@ code.ic {
   }
   .cover-page,
   .thankyou-page {
-    min-height: 540px;
+    min-height: 620px;
+    padding: 2rem 1.75rem;
   }
-  .cover-main-title {
-    font-size: 2.2rem;
+  .cover-big-title {
+    font-size: 2.3rem;
+  }
+  .cover-big-title .title-highlight {
+    font-size: 1.85rem;
   }
 }
 
@@ -426,7 +816,22 @@ code.ic {
     padding: 1.5rem 1.15rem;
     margin-bottom: 1.25rem;
   }
-
+  .cover-page,
+  .thankyou-page {
+    padding: 1.5rem 1.15rem;
+  }
+  .cover-header-row,
+  .cover-footer-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .ui-showcase-body {
+    grid-template-columns: 1fr;
+  }
+  .mock-cards-row {
+    grid-template-columns: 1fr;
+  }
   .page-top-header {
     flex-direction: row;
     justify-content: space-between;
@@ -434,20 +839,25 @@ code.ic {
     gap: 0.5rem;
     font-size: 0.78rem;
   }
-
   .page-foot {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-
   .toc-left {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.15rem;
   }
-  .cover-main-title {
-    font-size: 1.85rem;
+  .cover-big-title {
+    font-size: 1.95rem;
+  }
+  .cover-big-title .title-highlight {
+    font-size: 1.5rem;
+  }
+  .ch-title {
+    font-size: 1.15rem;
+    padding: 0.4rem 0.75rem;
   }
 }
 
@@ -495,6 +905,11 @@ code.ic {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
     overflow: hidden !important;
+  }
+
+  .cover-page,
+  .thankyou-page {
+    padding: 18mm 18mm !important;
   }
 
   .page:last-of-type,

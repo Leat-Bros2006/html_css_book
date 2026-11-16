@@ -13,17 +13,95 @@
     <main class="book-container">
 
         <!-- ទំព័រ 1: COVER PAGE -->
-        <section class="page cover-page" id="cover">
-            <div class="cover-center-box">
-                <span class="cover-badge-pill">Technical Documentation &amp; Learning Guide</span>
-                <h1 class="cover-main-title">HTML &amp; CSS ពីមូលដ្ឋាន<br>ដល់ការអនុវត្ត</h1>
-                <p class="cover-subtitle">HTML &amp; CSS: From Beginner to Advanced Development</p>
-                <div class="cover-line"></div>
-                <div class="cover-meta">
-                    <p>រៀបចំដោយ៖ <strong>លាត ប្រុស</strong></p>
-                    <p>ទំនាក់ទំនងមកកាន់ខ្ញុំ៖ <a href="https://t.me/leatbros0979445608" target="_blank"
-                            rel="noopener">Telegram</a>
-                    </p>
+        <section class="page cover-page">
+            <!-- ផ្ទៃពន្លឺ និងរូបរាងធរណីមាត្របែប UI/UX Design -->
+            <div class="cover-glow-orb"></div>
+            <div class="cover-accent-strip"></div>
+
+            <!-- ផ្នែកខាងលើ -->
+            <div class="cover-header-row">
+                <div class="cover-brand-tag">
+                    <span class="dot-indicator"></span>
+                    <span>WEB DEVELOPMENT SERIES</span>
+                </div>
+                <div class="cover-tech-badges">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">RESPONSIVE</span>
+                </div>
+            </div>
+
+            <!-- ផ្នែកកណ្តាល (ចំណងជើង និងផ្ទាំង Browser UI Mockup) -->
+            <div class="cover-main-section">
+                <p class="cover-overline">PRACTICAL FRONTEND HANDBOOK</p>
+                <h1 class="cover-big-title">
+                    HTML5 &amp; CSS3<br>
+                    <span class="title-highlight">ពីមូលដ្ឋានដល់ការអនុវត្ត</span>
+                </h1>
+                <p class="cover-desc">
+                    ឯកសារមេរៀននេះ សិក្សាពីការបង្កើត និងរចនាគេហទំព័រចាប់ពីចំណុចសូន្យ ដល់ស៊ីជម្រៅ ដោយផ្តោតទៅលើរចនាសម្ព័ន្ធ
+                    HTML5,
+                    ការតុបតែង CSS3, Flexbox, CSS Grid និងការធ្វើឱ្យគេហទំព័រដើរស្អាតលើគ្រប់ទំហំអេក្រង់។
+                </p>
+
+                <!-- ផ្ទាំង Browser UI Architecture Mockup -->
+                <div class="cover-ui-showcase">
+                    <div class="ui-showcase-bar">
+                        <div class="browser-dots">
+                            <span class="browser-dot dot-red"></span>
+                            <span class="browser-dot dot-yellow"></span>
+                            <span class="browser-dot dot-green"></span>
+                        </div>
+                        <span class="ui-showcase-title">modern-layout.html — Live Preview</span>
+                        <span class="ui-showcase-badge">100% Responsive</span>
+                    </div>
+                    <div class="ui-showcase-body">
+                        <div class="ui-mock-sidebar">
+                            <div class="mock-line w-70 active"></div>
+                            <div class="mock-line w-90"></div>
+                            <div class="mock-line w-60"></div>
+                            <div class="mock-line w-80"></div>
+                        </div>
+                        <div class="ui-mock-content">
+                            <div class="mock-hero-banner">
+                                <span class="mock-tag">&lt;header class="modern-ui"&gt;</span>
+                                <h4>រៀនបង្កើតគេហទំព័រដោយខ្លួនឯង</h4>
+                            </div>
+                            <div class="mock-cards-row">
+                                <div class="mock-mini-card">
+                                    <span class="mock-icon">01</span>
+                                    <strong>HTML5</strong>
+                                    <small>Semantic Tags</small>
+                                </div>
+                                <div class="mock-mini-card">
+                                    <span class="mock-icon">02</span>
+                                    <strong>CSS3</strong>
+                                    <small>Flexbox &amp; Grid</small>
+                                </div>
+                                <div class="mock-mini-card">
+                                    <span class="mock-icon">03</span>
+                                    <strong>Projects</strong>
+                                    <small>Browser Output</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ផ្នែកខាងក្រោម (ព័ត៌មានអ្នករៀបរៀង) -->
+            <div class="cover-footer-box">
+                <div class="cover-author-block">
+                    <div class="author-avatar">LB</div>
+                    <div>
+                        <span class="author-label">រៀបរៀង និងចងក្រងដោយ</span>
+                        <h3 class="author-name">លាត ប្រុស</h3>
+                    </div>
+                </div>
+                <div class="cover-contact-group">
+                    <a href="https://t.me/leatbros0979445608" target="_blank" class="cover-action-btn">
+                        ទំនាក់ទំនងតាម Telegram
+                    </a>
                 </div>
             </div>
         </section>
@@ -2208,22 +2286,23 @@
                     ការអនុវត្តសរសេរកូដជាប្រចាំ នឹងជួយឱ្យអ្នករីកចម្រើនឥតឈប់ឈរ!
                 </p>
 
-                <!-- ប្រអប់ណែនាំជំហានបន្ទាប់ -->
-                <div
-                    style="max-width: 480px; margin: 0 auto 1.5rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px 16px; text-align: left; font-size: 0.78rem;">
-                    <p style="font-weight: 700; color: #0284C7; margin-bottom: 6px;">🚀 ភាសាដែលអ្នកគួរសិក្សាបន្ទាប់៖</p>
-                    <p style="margin: 4px 0; color: #334155;"><strong>១. JavaScript (ES6+)៖</strong> បន្ថែមចលនា
-                        ភាពរស់រវើក និង Logic ឱ្យគេហទំព័រមានអន្តរកម្ម។</p>
-                    <p style="margin: 4px 0; color: #334155;"><strong>២. Tailwind CSS ឬ Bootstrap៖</strong>
-                        ជួយឱ្យការរចនា Responsive កាន់តែលឿនរហ័ស។</p>
-                    <p style="margin: 4px 0; color: #334155;"><strong>៣. React.js / Next.js៖</strong> ឈានទៅបង្កើត Web
-                        Application ខ្នាតធំស្តង់ដារក្រុមហ៊ុន។</p>
+                <div class="thankyou-next-box">
+                    <span class="next-title">🚀 ភាសាដែលអ្នកគួរសិក្សាបន្ទាប់៖</span>
+                    <div style="font-size: 0.88rem; line-height: 1.75;">
+                        <p><strong>១. JavaScript (ES6+)៖</strong> បន្ថែមចលនា ភាពរស់រវើក និង Logic
+                            ឱ្យគេហទំព័រមានអន្តរកម្ម។</p>
+                        <p><strong>២. Tailwind CSS ឬ Bootstrap៖</strong> ជួយឱ្យការរចនា Responsive កាន់តែលឿនរហ័ស។</p>
+                        <p><strong>៣. React.js / Next.js៖</strong> ឈានទៅបង្កើត Web Application ខ្នាតធំស្តង់ដារក្រុមហ៊ុន។
+                        </p>
+                    </div>
                 </div>
 
                 <div class="cover-meta">
-                    <p>រៀបរៀង និងចងក្រងដោយ៖ <strong>លាត ប្រុស</strong></p>
-                    <p>ទំនាក់ទំនងមកកាន់ខ្ញុំ៖ <a href="https://t.me/leatbros0979445608" target="_blank"
-                            rel="noopener">Telegram</a></p>
+                    <p style="margin-bottom: 0.85rem;">រៀបរៀង និងចងក្រងដោយ៖ <strong>លាត ប្រុស</strong></p>
+                    <a href="https://t.me/leatbros0979445608" target="_blank" rel="noopener"
+                        class="cover-action-btn thankyou-btn">
+                        ទំនាក់ទំនងតាម Telegram
+                    </a>
                 </div>
             </div>
 
