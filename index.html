@@ -172,7 +172,8 @@
                     </a>
                     <a href="#chapter-14" class="toc-row">
                         <div class="toc-left"><span class="toc-num">14.</span><span class="toc-title">CSS Typography
-                                &amp; Google Fonts</span></div><span class="toc-page">ទំព័រ 17</span>
+                                &amp;
+                                Shadow</span></div><span class="toc-page">ទំព័រ 17</span>
                     </a>
                     <a href="#chapter-15" class="toc-row">
                         <div class="toc-left"><span class="toc-num">15.</span><span class="toc-title">CSS Box
@@ -1387,80 +1388,98 @@
             </footer>
         </section>
 
-        <!-- 14. Typography -->
+        <!-- 14. Typography & Shadows -->
         <section class="page" id="chapter-14">
             <div class="page-body">
                 <header class="page-top-header">
                     <a href="#toc">HTML &amp; CSS</a>
-                    <span>14. CSS Typography</span>
+                    <span>14. CSS Typography &amp; Shadows</span>
                 </header>
 
-                <h2 class="ch-title">14. CSS Typography &amp; Google Fonts</h2>
+                <h2 class="ch-title">14. CSS Typography &amp; Shadow</h2>
 
                 <p class="step-heading">1. Definition (និយមន័យ):</p>
-                <p class="step-text">CSS Typography ប្រើសម្រាប់គ្រប់គ្រងទម្រង់ពុម្ពអក្សរ ទំហំ កម្រាស់ ការតម្រឹម
-                    និងគម្លាតបន្ទាត់ដើម្បីឱ្យអត្ថបទមានសោភ័ណភាព និងស្រួលអានបំផុត។</p>
+                <p class="step-text">CSS Typography គឺជា Property របស់ CSS ដែលប្រើសម្រាប់គ្រប់គ្រង និងរៀបចំផ្នែកអក្សរ។
+                    ចំណែកឯ <code class="ic">shadow</code> ប្រើសម្រាប់ដាក់ស្រមោលទៅឱ្យអក្សរ ឬប្រអប់។</p>
 
-                <p class="step-heading">2. មុខងារសំខាន់ៗ:</p>
+                <p class="step-heading">2. មុខងារសំខាន់ៗ (Typography):</p>
                 <ul class="step-list">
-                    <li><code class="ic">font-family</code> <strong>(ពុម្ពអក្សរ)៖</strong> កំណត់ប្រភេទពុម្ពអក្សរ
-                        (ឧ. <code class="ic">'Kantumruy Pro', sans-serif</code>)។</li>
-                    <li><code class="ic">font-size</code> <strong>(ទំហំអក្សរ)៖</strong> កំណត់ទំហំអក្សរ (គួរប្រើ <code
-                            class="ic">rem</code> ជំនួស <code class="ic">px</code>)។</li>
+                    <li><code class="ic">font-family</code> <strong>(ពុម្ពអក្សរ)៖</strong> កំណត់ប្រភេទពុម្ពអក្សរ (ឧ.
+                        <code class="ic">'Kantumruy Pro', sans-serif</code>)។
+                    </li>
+                    <li><code class="ic">font-size</code> <strong>(ទំហំអក្សរ)៖</strong> កំណត់ទំហំអក្សរ។</li>
                     <li><code class="ic">font-weight</code> <strong>(កម្រាស់អក្សរ)៖</strong> កំណត់ភាពស្តើង ឬដិត (<code
                             class="ic">400</code> ធម្មតា, <code class="ic">600</code> ដិតល្មម, <code
                             class="ic">700</code> ដិតខ្លាំង)។</li>
-                    <li><code class="ic">line-height</code> <strong>(គម្លាតជួរ)៖</strong>
-                        កំណត់គម្លាតពីជួរមួយទៅជួរមួយ (គួរដាក់ចាប់ពី <code class="ic">1.6</code> ឡើងសម្រាប់អក្សរខ្មែរ)។
-                    </li>
-                    <li><code class="ic">text-align</code> <strong>(តម្រឹមអក្សរ)៖</strong> កំណត់ទីតាំងអក្សរ
-                        (<code class="ic">left</code>, <code class="ic">center</code>, <code class="ic">right</code>,
-                        <code class="ic">justify</code>)។
-                    </li>
-                    <li><code class="ic">text-decoration</code> <strong>(បន្ទាត់តុបតែងអក្សរ)៖</strong>
-                        កំណត់ ឬដកបន្ទាត់លើអត្ថបទ (<code class="ic">none</code>, <code class="ic">underline</code>, <code
+                    <li><code class="ic">line-height</code> <strong>(គម្លាតជួរ)៖</strong> កំណត់គម្លាតពីជួរមួយទៅជួរមួយ
+                        (គួរដាក់ចាប់ពី <code class="ic">1.7</code> ឡើងសម្រាប់អក្សរខ្មែរ)។</li>
+                    <li><code class="ic">text-align</code> <strong>(តម្រឹមអក្សរ)៖</strong> កំណត់ទីតាំងអក្សរ (<code
+                            class="ic">left</code>, <code class="ic">center</code>, <code class="ic">right</code>, <code
+                            class="ic">justify</code>)។</li>
+                    <li><code class="ic">text-decoration</code> <strong>(បន្ទាត់តុបតែងអក្សរ)៖</strong> កំណត់
+                        ឬដកបន្ទាត់លើអក្សរ (<code class="ic">none</code>, <code class="ic">underline</code>, <code
                             class="ic">line-through</code>)។</li>
                     <li><code class="ic">letter-spacing</code> <strong>(គម្លាតតួអក្សរ)៖</strong>
-                        កំណត់ចន្លោះរវាងតួអក្សរនីមួយៗ (ឧ. <code class="ic">2px</code>)។</li>
-                    <li><code class="ic">word-spacing</code> <strong>(គម្លាតពាក្យ)៖</strong>
-                        កំណត់ចន្លោះរវាងពាក្យនីមួយៗ (ឧ. <code class="ic">6px</code>)។</li>
+                        កំណត់ចន្លោះរវាងតួអក្សរនីមួយៗ។</li>
+                    <li><code class="ic">word-spacing</code> <strong>(គម្លាតពាក្យ)៖</strong> កំណត់ចន្លោះរវាងពាក្យនីមួយៗ។
+                    </li>
                 </ul>
 
-                <p class="step-heading">3. Syntax (ទម្រង់កូដ):</p>
+                <p class="step-heading">3. ការដាក់ស្រមោល (Shadows):</p>
+                <ul class="step-list">
+                    <li><code class="ic">text-shadow</code> <strong>(ស្រមោលអក្សរ)៖</strong> បង្កើតស្រមោលឱ្យអក្សរ (<code
+                            class="ic">x y blur color</code>) ដើម្បីឱ្យចំណងជើងមើលទៅមានជម្រៅ។</li>
+                    <li><code class="ic">box-shadow</code> <strong>(ស្រមោលប្រអប់)៖</strong> បង្កើតស្រមោលឱ្យប្រអប់ (<code
+                            class="ic">x y blur spread color</code>) ចំពោះ <code class="ic">spread</code> គឺជា Optional
+                        (ដាក់ក៏បាន មិនដាក់ក៏បាន)។</li>
+                </ul>
+
+                <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
                 <div class="code-box">
                     <pre><span class="t-sel">body</span> {
   <span class="t-prop">font-family</span>: <span class="t-str">'Kantumruy Pro', sans-serif</span>;
   <span class="t-prop">font-size</span>: <span class="t-str">1rem</span>;
-  <span class="t-prop">font-weight</span>: <span class="t-str">400</span>;
   <span class="t-prop">line-height</span>: <span class="t-str">1.75</span>;
 }
-<span class="t-sel">.heading</span> { <span class="t-prop">text-align</span>: <span class="t-str">center</span>; <span class="t-prop">letter-spacing</span>: <span class="t-str">2px</span>; <span class="t-prop">word-spacing</span>: <span class="t-str">6px</span>; }
-<span class="t-sel">a</span> { <span class="t-prop">text-decoration</span>: <span class="t-str">none</span>; } <span class="t-com">/* ដកបន្ទាត់ក្រោម Link */</span></pre>
+
+<span class="t-sel">.title</span> {
+  <span class="t-prop">text-align</span>: <span class="t-str">center</span>;
+  <span class="t-prop">letter-spacing</span>: <span class="t-str">2px</span>;
+  <span class="t-prop">word-spacing</span>: <span class="t-str">8px</span>;
+  <span class="t-prop">text-shadow</span>: <span class="t-str">2px 2px 4px rgba(2, 132, 199, 0.35)</span>;
+}
+
+<span class="t-sel">.card-box</span> {
+  <span class="t-prop">box-shadow</span>: <span class="t-str">0 6px 16px rgba(15, 23, 42, 0.15)</span>;
+}</pre>
                 </div>
 
-                <p class="step-heading">4. Output (លទ្ធផលនៅលើ Browser):</p>
+                <p class="step-heading">5. Output (លទ្ធផលនៅលើ Browser):</p>
                 <div class="browser-window">
                     <div class="browser-header">
                         <div class="browser-dots"><span class="browser-dot dot-red"></span><span
                                 class="browser-dot dot-yellow"></span><span class="browser-dot dot-green"></span></div>
                         <div class="browser-url-bar">https://localhost:5500</div>
                     </div>
-                    <div class="browser-canvas" style="padding:5px 10px;">
+                    <div class="browser-canvas" style="padding:8px 12px;">
                         <div
-                            style="text-align:center; font-weight:700; font-size:0.72rem; letter-spacing:2px; word-spacing:6px; color:#0284C7; margin-bottom:2px;">
-                            CSS TYPOGRAPHY &amp; SPACING
+                            style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:8px 12px; box-shadow: 0 6px 16px rgba(15, 23, 42, 0.15);">
+                            <div
+                                style="text-align:center; font-weight:800; font-size:0.78rem; letter-spacing:2px; word-spacing:8px; color:#0284C7; text-shadow: 2px 2px 4px rgba(2, 132, 199, 0.35); margin-bottom:3px;">
+                                CSS TYPOGRAPHY &amp; SHADOWS
+                            </div>
+                            <p
+                                style="font-family:'Kantumruy Pro', sans-serif; font-size:0.68rem; line-height:1.5; margin:0; color:#0F172A; text-align:center;">
+                                កាតនេះប្រើ <strong>box-shadow</strong> ហើយចំណងជើងខាងលើប្រើ <strong>text-shadow</strong>។
+                            </p>
                         </div>
-                        <p
-                            style="font-family:'Kantumruy Pro', sans-serif; font-size:0.68rem; line-height:1.5; margin:0; color:#0F172A;">
-                            ពុម្ពអក្សរ <strong>Kantumruy Pro</strong> ជួយឱ្យអត្ថបទខ្មែរមានគម្លាតជើងច្បាស់ មិនជាន់គ្នា។
-                        </p>
                     </div>
                 </div>
 
                 <div class="summary-box">
-                    <strong>5. Summary (សង្ខេបមេរៀន)៖</strong> ការរៀបចំអក្សរខ្មែរត្រូវជ្រើសរើស Google Fonts ស្អាត
-                    និងកំណត់ <code class="ic">line-height</code> យ៉ាងតិច <code class="ic">1.7</code>
-                    ដើម្បីការពារការជាន់ជើងអក្សរ។
+                    <strong>6. Summary (សង្ខេបមេរៀន)៖</strong> CSS Typography ប្រើសម្រាប់រៀបចំ
+                    និងតុបតែងផ្នែកអក្សរឱ្យស្អាត ចំណែកឯ <code class="ic">shadow</code> ប្រើសម្រាប់ដាក់ស្រមោលឱ្យអក្សរ
+                    និងប្រអប់មើលទៅកាន់តែលេចធ្លោ។
                 </div>
             </div>
 
